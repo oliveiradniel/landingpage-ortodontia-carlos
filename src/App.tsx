@@ -1,5 +1,5 @@
 function App() {
-  return <div>odonto</div>;
+  return <div>odontoo</div>;
 }
 
 export default App;
