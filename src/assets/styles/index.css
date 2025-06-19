@@ -10,4 +10,15 @@
   --color-iron-gray: #333333;
 
   --font-sora: "Sora", sans-serif;
+
+  --animate-infinite-horizontal-scroll: infinite-horizontal-scroll 30s infinite
+    linear;
+  @keyframes infinite-horizontal-scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(calc(-100% - 16px));
+    }
+  }
 }
