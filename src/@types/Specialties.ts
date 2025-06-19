@@ -1,7 +1,7 @@
-export interface SpecialtieItem {
+export interface SpecialtyItem {
   icon: string;
   title: string;
   description: string;
 }
 
-export type SpecialtieCardProps = SpecialtieItem;
+export type SpecialtyCardProps = SpecialtyItem;

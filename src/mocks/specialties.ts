@@ -5,9 +5,9 @@ import periodontics from "@/assets/icons/periodontics.svg";
 import endodontics from "@/assets/icons/endodontics.svg";
 import pediatric from "@/assets/icons/pediatric.svg";
 
-import type { SpecialtieItem } from "@/@types/Specialties";
+import type { SpecialtyItem } from "@/@types/Specialties";
 
-export const specialties: SpecialtieItem[] = [
+export const specialties: SpecialtyItem[] = [
   {
     icon: implant,
     title: "Implantes Dentários",
