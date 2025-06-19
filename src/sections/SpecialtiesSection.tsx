@@ -2,16 +2,12 @@ import clsx from "clsx";
 
 import { specialties } from "../mocks/specialties";
 
+import {
+  doubleUnderline,
+  h2BottomUnderline,
+} from "../assets/styles/underlines";
+
 export default function SpecialtiesSection() {
-  const h2BottomUnderline =
-    "after:absolute after:w-[40%] after:h-[1.4px] after:bg-ocean-blue after:left-1/2 after:-translate-x-1/2 after:right-0 after:bottom-[-8px] after:mask-[linear-gradient(to_right,transparent,black_40%,black_60%,transparent)]";
-
-  const specialtieCardTopUnderline =
-    "before:absolute before:w-full before:h-[1.4px] before:bg-ocean-blue before:left-1/2 before:-translate-x-1/2 before:right-0 before:top-0 before:mask-[linear-gradient(to_right,transparent,black_40%,black_60%,transparent)]";
-
-  const specialtieCardBottomUnderline =
-    "after:absolute after:w-full after:h-[2px] after:bg-ocean-blue after:left-1/2 after:-translate-x-1/2 after:right-0 after:bottom-0 after:mask-[linear-gradient(to_right,transparent,black_40%,black_60%,transparent)]";
-
   return (
     <section
       role="region"
@@ -38,8 +34,7 @@ export default function SpecialtiesSection() {
             key={index}
             className={clsx(
               "relative flex flex-col items-center justify-center gap-2 py-4 md:max-w-[320px]",
-              specialtieCardTopUnderline,
-              specialtieCardBottomUnderline
+              doubleUnderline
             )}
           >
             <img
