@@ -1,4 +1,4 @@
-import type { HighlightCardProps } from "../../../@types/HighlightItem";
+import type { HighlightCardProps } from "@/@types/HighlightItem";
 
 export default function HighlightCard({ Icon, text }: HighlightCardProps) {
   return (

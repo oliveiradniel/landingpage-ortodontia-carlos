@@ -1,7 +1,7 @@
 import { FaHeartbeat, FaUsers } from "react-icons/fa";
 import { IoIosHome } from "react-icons/io";
 
-import type { HighlightItem } from "../@types/HighlightItem";
+import type { HighlightItem } from "@/@types/HighlightItem";
 
 export const heroHighlights: HighlightItem[] = [
   {

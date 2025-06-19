@@ -1,11 +1,11 @@
-import implant from "../assets/icons/implant.svg";
-import esthetic from "../assets/icons/esthetic.svg";
-import orthodontics from "../assets/icons/orthodontics.svg";
-import periodontics from "../assets/icons/periodontics.svg";
-import endodontics from "../assets/icons/endodontics.svg";
-import pediatric from "../assets/icons/pediatric.svg";
+import implant from "@/assets/icons/implant.svg";
+import esthetic from "@/assets/icons/esthetic.svg";
+import orthodontics from "@/assets/icons/orthodontics.svg";
+import periodontics from "@/assets/icons/periodontics.svg";
+import endodontics from "@/assets/icons/endodontics.svg";
+import pediatric from "@/assets/icons/pediatric.svg";
 
-import type { SpecialtieItem } from "../@types/Specialties";
+import type { SpecialtieItem } from "@/@types/Specialties";
 
 export const specialties: SpecialtieItem[] = [
   {

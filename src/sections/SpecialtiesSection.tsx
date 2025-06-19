@@ -1,11 +1,8 @@
 import clsx from "clsx";
 
-import { specialties } from "../mocks/specialties";
+import { specialties } from "@/mocks/specialties";
 
-import {
-  doubleUnderline,
-  h2BottomUnderline,
-} from "../assets/styles/underlines";
+import { doubleUnderline, h2BottomUnderline } from "@/assets/styles/underlines";
 
 export default function SpecialtiesSection() {
   return (

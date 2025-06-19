@@ -1,4 +1,4 @@
-import { heroHighlights } from "../../../mocks/heroHighlights";
+import { heroHighlights } from "@/mocks/heroHighlights";
 
 import HighlightCard from "./HighlightCard";
 
