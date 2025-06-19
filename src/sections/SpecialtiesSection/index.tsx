@@ -1,5 +1,6 @@
 import Title from "./components/Title";
 import SpecialtiesList from "./components/SpecialtiesList";
+import CTA from "./components/CTA";
 
 export default function SpecialtiesSection() {
   return (
@@ -11,6 +12,8 @@ export default function SpecialtiesSection() {
       <Title />
 
       <SpecialtiesList />
+
+      <CTA />
     </section>
   );
 }
