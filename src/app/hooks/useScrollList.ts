@@ -1,11 +1,14 @@
 import { useCallback } from "react";
 
-interface UseScrollList {
+interface UseScrollListProps {
   containerRef: React.RefObject<HTMLUListElement | null>;
   amount: number;
 }
 
-export default function useScrollList({ containerRef, amount }: UseScrollList) {
+export default function useScrollList({
+  containerRef,
+  amount,
+}: UseScrollListProps) {
   const scrollLeft = useCallback(() => {
     if (containerRef?.current) {
       containerRef.current.scrollBy({ left: -amount, behavior: "smooth" });
