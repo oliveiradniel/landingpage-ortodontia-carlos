@@ -22,4 +22,14 @@
       transform: translateX(calc(-100% - 16px));
     }
   }
+
+  --animate-previous: previous 3s linear;
+  @keyframes previous {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(300px);
+    }
+  }
 }
