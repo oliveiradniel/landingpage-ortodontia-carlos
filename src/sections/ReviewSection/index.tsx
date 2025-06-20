@@ -1,5 +1,7 @@
 import { useRef } from "react";
 
+import useScrollList from "@/app/hooks/useScrollList";
+
 import {
   FaArrowAltCircleLeft,
   FaArrowAltCircleRight,
@@ -10,16 +12,12 @@ import { patientReviews } from "@/mocks/patientReviews";
 
 export default function ReviewSection() {
   const listRef = useRef<HTMLUListElement>(null);
-  const scrollAmount = 320;
+  const SCROLL_AMOUNT = 320;
 
-  function handleScroll(direction: "left" | "right") {
-    if (listRef.current) {
-      const container = listRef.current;
-      const scrollBy = direction === "left" ? -scrollAmount : scrollAmount;
-
-      container.scrollBy({ left: scrollBy, behavior: "smooth" });
-    }
-  }
+  const { scrollLeft, scrollRight } = useScrollList({
+    containerRef: listRef,
+    amount: SCROLL_AMOUNT,
+  });
 
   return (
     <section
@@ -47,14 +45,14 @@ export default function ReviewSection() {
           <button
             aria-label="Ir até a avaliação anterior"
             className="cursor-pointer hover:opacity-90 duration-300 ease-in-out transition-opacity"
-            onClick={() => handleScroll("left")}
+            onClick={scrollLeft}
           >
             <FaArrowAltCircleLeft aria-hidden="true" size={32} />
           </button>
           <button
             aria-label="Ir até a avaliação posterior"
             className="cursor-pointer hover:opacity-90 duration-300 ease-in-out transition-opacity"
-            onClick={() => handleScroll("right")}
+            onClick={scrollRight}
           >
             <FaArrowAltCircleRight aria-hidden="true" size={32} />
           </button>
@@ -66,14 +64,14 @@ export default function ReviewSection() {
           <button
             aria-label="Ir até a avaliação anterior"
             className="absolute left-0 cursor-pointer hover:opacity-90 duration-300 ease-in-out transition-opacity"
-            onClick={() => handleScroll("left")}
+            onClick={scrollLeft}
           >
             <FaArrowAltCircleLeft aria-hidden="true" size={32} />
           </button>
           <button
             aria-label="Ir até a avaliação posterior"
             className="absolute right-0 cursor-pointer hover:opacity-90 duration-300 ease-in-out transition-opacity"
-            onClick={() => handleScroll("right")}
+            onClick={scrollRight}
           >
             <FaArrowAltCircleRight aria-hidden="true" size={32} />
           </button>
