@@ -7,7 +7,7 @@ export default function FooterSection() {
     <footer className="w-full bg-powder-blue/60 mt-8 p-2 pb-6 flex items-center gap-2 flex-col">
       <Logo />
 
-      <div className="flex flex-col lg:flex-row items-center gap-8 lg:h-[98px]">
+      <div className="flex flex-col lg:flex-row w-full lg:justify-around items-center lg:h-[98px]">
         <div className="flex flex-col md:flex-row items-center md:h-[98px] gap-8">
           <InformationSection
             title="Responsável Técnico:"
@@ -28,7 +28,7 @@ export default function FooterSection() {
         <SocialMediaSection />
       </div>
 
-      <p className="text-center mt-12">
+      <p className="text-center mt-12 font-light">
         Copyright © 2025 | Todos os direitos reservados
       </p>
     </footer>

@@ -6,14 +6,14 @@ export default function SocialMediaSection() {
   return (
     <section
       aria-labelledby="social-media"
-      className="flex flex-col items-center md:items-start gap-4 lg:min-w-[300px]"
+      className="flex flex-col items-center md:items-start lg:items-end gap-4 lg:min-w-[300px]"
     >
       <TitleSection id="social-media" label="Siga-nos nas redes sociais" />
 
       <div
         role="group"
         aria-label="Acompanhe-nos nas redes sociais"
-        className="flex gap-2 items-center justify-evenly"
+        className="flex gap-2"
       >
         {socialMedia.map(({ Icon, href }) => (
           <a
