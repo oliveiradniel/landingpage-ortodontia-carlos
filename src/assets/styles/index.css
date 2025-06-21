@@ -32,4 +32,14 @@
       transform: translateX(300px);
     }
   }
+
+  --animate-fade-in: fade-in 0.3s linear;
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
 }

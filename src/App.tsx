@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import FABGroup from "./components/FABGroup";
 
 import HeroSection from "./sections/HeroSection";
 import SpecialtiesSection from "./sections/SpecialtiesSection";
@@ -9,10 +10,12 @@ import FooterSection from "./sections/FooterSection";
 
 function App() {
   return (
-    <div>
+    <div className="relative">
+      <FABGroup />
+
       <Header />
 
-      <main role="main" className="p-4">
+      <main role="main" className="p-4 z-[-1]">
         <HeroSection />
         <SpecialtiesSection />
         <AboutMeSection />
