@@ -22,7 +22,7 @@ export default function ContactButtonsGroup({
     >
       {meansOfContact.map(({ Icon, means }) => (
         <button
-          aria-label="Falar com a clínica pelo WhatsApp"
+          aria-label={`Falar com a clínica pelo ${means}`}
           type="button"
           className="flex items-center justify-center bg-steel-blue text-white gap-2 px-4 rounded-lg py-4 w-full md:max-w-[400px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-steel-blue/94 hover:scale-101"
         >

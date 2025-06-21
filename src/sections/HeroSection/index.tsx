@@ -1,11 +1,12 @@
+import Logo from "@/components/Logo";
+import CTAButton from "@/components/CTAButton";
+import ArrowToButton from "@/components/ArrowToButton";
+
 import HighlightList from "./components/HighlightList";
 import Title from "./components/Title";
-import Logo from "./components/Logo";
 import MobileDescription from "./components/MobileDescription";
 import DesktopDescription from "./components/DesktopDescription";
 import DoctorImage from "./components/DoctorImage";
-import CTAButton from "@/components/CTAButton";
-import ArrowToButton from "@/components/ArrowToButton";
 
 export default function HeroSection() {
   return (

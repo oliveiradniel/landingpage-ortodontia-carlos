@@ -5,6 +5,7 @@ import SpecialtiesSection from "./sections/SpecialtiesSection";
 import AboutMeSection from "./sections/AboutMeSection";
 import ReviewSection from "./sections/ReviewSection";
 import LocationSection from "./sections/LocationSection";
+import FooterSection from "./sections/FooterSection";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <ReviewSection />
         <LocationSection />
       </main>
+
+      <FooterSection />
     </div>
   );
 }

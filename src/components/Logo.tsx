@@ -3,7 +3,7 @@ export default function Logo() {
     <img
       src="/logo.png"
       alt="Logo da Clínica Odontológica Dr. Carlos Alberto"
-      className="h-14 w-[140px] lg:h-18 lg:w-[180px]"
+      className="h-20 w-auto lg:h-26"
     />
   );
 }
