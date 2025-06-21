@@ -7,7 +7,7 @@ export default function Title() {
     <h2
       id="specialties"
       className={clsx(
-        "relative text-center text-xl md:text-2xl font-bold text-ocean-blue",
+        "relative text-center text-2xl md:text-3xl font-bold text-ocean-blue",
         h2BottomUnderline
       )}
     >

@@ -1,5 +1,3 @@
-import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-
 import HighlightList from "./components/HighlightList";
 import Title from "./components/Title";
 import Logo from "./components/Logo";
@@ -7,6 +5,7 @@ import MobileDescription from "./components/MobileDescription";
 import DesktopDescription from "./components/DesktopDescription";
 import DoctorImage from "./components/DoctorImage";
 import CTAButton from "@/components/CTAButton";
+import ArrowToButton from "@/components/ArrowToButton";
 
 export default function HeroSection() {
   return (
@@ -34,11 +33,7 @@ export default function HeroSection() {
 
       <HighlightList />
 
-      <MdKeyboardDoubleArrowDown
-        aria-hidden="true"
-        size={42}
-        className="text-sky-blue animate-bounce sm:mt-6"
-      />
+      <ArrowToButton />
     </section>
   );
 }
