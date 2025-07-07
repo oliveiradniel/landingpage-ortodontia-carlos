@@ -1,54 +1,69 @@
-# React + TypeScript + Vite
+# Landing Page – Dr. Carlos Alberto | Ortodontia Estética
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page institucional desenvolvida para o Dr. Carlos Alberto, especialista em ortodontia estética, com foco em apresentar sua trajetória profissional, tratamentos oferecidos e facilitar o agendamento de consultas.
 
-Currently, two official plugins are available:
+![Captura de tela do site](https://raw.githubusercontent.com/oliveiradniel/landingpage-ortodontia-carlos/refs/heads/main/public/screencapture.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- HTML5
+- Tailwind CSS
+- TypeScript
+- React
+- Vite
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## ✨ Funcionalidades
+
+- Estrutura 100% responsiva para todos os dispositivos.
+- Sessões institucionais (sobre, especialidades, história, avaliações, mapa da clínica e meios de contato).
+- Focada para um bom SEO e acessibilidade.
+
+---
+
+## 🚀 Como rodar localmente
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/oliveiradniel/landingpage-ortodontia-carlos.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Acesse a pasta do projeto:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+cd landingpage-ortodontia-carlos
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+
+3. Instale as dependências:
+
+```bash
+yarn
+```
+
+ou
+
+```bash
+npm install
+```
+
+4. Inicie o servidor de desenvolvimento:
+
+```bash
+yarn dev
+```
+
+ou
+
+```bash
+npm install
+```
+
+## Desenvolvedor
+
+Desenvolvido por [Daniel Oliveira](https://www.kadasites.com.br)
+Entre em contato para criação de sites institucionais e landing pages personalizadas.
